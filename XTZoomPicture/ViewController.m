@@ -7,12 +7,35 @@
 //
 
 #import "ViewController.h"
+#import "XTZoomPicture.h"
 
-@interface ViewController ()
-
+@interface ViewController () <XTZoomPictureDelegate>
+@property (nonatomic,strong) XTZoomPicture *zoomPictureView ;
 @end
 
 @implementation ViewController
+
+- (IBAction)btClicked:(id)sender {
+    (![self.zoomPictureView superview]) ? [self.view addSubview:self.zoomPictureView] : [self.zoomPictureView removeFromSuperview] ;
+}
+
+- (XTZoomPicture *)zoomPictureView
+{
+    if (!_zoomPictureView) {
+        _zoomPictureView = [[XTZoomPicture alloc] initWithFrame:self.view.bounds] ;
+        _zoomPictureView.backImage = [UIImage imageNamed:@"back1"] ;
+        _zoomPictureView.xt_Delegate = self ;
+    }
+    
+    return _zoomPictureView ;
+}
+
+#pragma mark --
+#pragma mark - XTZoomPictureDelegate
+- (void)shutDown
+{
+    [self.zoomPictureView removeFromSuperview] ;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
