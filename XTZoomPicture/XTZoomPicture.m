@@ -71,7 +71,6 @@
     self.imageView.image = backImage ;
 }
 
-
 - (UIImageView *)imageView
 {
     if (!_imageView)
