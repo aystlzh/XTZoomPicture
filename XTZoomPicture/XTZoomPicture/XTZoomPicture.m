@@ -17,6 +17,17 @@
 #pragma mark --
 #pragma mark - Initial
 - (id)initWithFrame:(CGRect)frame
+          backImage:(UIImage *)backImage
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setup] ;
+        self.backImage = backImage ;
+    }
+    return self;
+}
+
+- (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -113,7 +124,7 @@
 - (void)tap:(UITapGestureRecognizer *)tapGetrue
 {
     [self resetToOrigin] ;
-    [self.xt_Delegate shutDown] ; // shut down when single tap
+    [self removeFromSuperview] ;
 }
 
 - (void)doubleTap:(UITapGestureRecognizer *)tapGesture

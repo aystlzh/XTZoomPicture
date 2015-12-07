@@ -12,14 +12,12 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol XTZoomPictureDelegate <NSObject>
-- (void)shutDown ;
-@end
-
 @interface XTZoomPicture : UIScrollView <UIScrollViewDelegate>
 
-@property (nonatomic, weak) id <XTZoomPictureDelegate> xt_Delegate;
 @property (nonatomic,strong) UIImage *backImage ;
+
+- (id)initWithFrame:(CGRect)frame
+          backImage:(UIImage *)backImage ;
 - (id)initWithFrame:(CGRect)frame ;
 - (void)resetToOrigin ;
 
