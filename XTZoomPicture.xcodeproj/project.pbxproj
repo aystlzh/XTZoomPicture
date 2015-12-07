@@ -15,7 +15,7 @@
 		D7E8FC821C104CB3005E908F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E8FC801C104CB3005E908F /* LaunchScreen.storyboard */; };
 		D7E8FC8D1C104CB3005E908F /* XTZoomPictureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FC8C1C104CB3005E908F /* XTZoomPictureTests.m */; };
 		D7E8FC981C104CB3005E908F /* XTZoomPictureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FC971C104CB3005E908F /* XTZoomPictureUITests.m */; };
-		D7E8FCA71C104CE5005E908F /* XTZoomPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FCA61C104CE5005E908F /* XTZoomPicture.m */; };
+		D7E8FD801C159D34005E908F /* XTZoomPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E8FD7F1C159D34005E908F /* XTZoomPicture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		D7E8FC931C104CB3005E908F /* XTZoomPictureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTZoomPictureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E8FC971C104CB3005E908F /* XTZoomPictureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTZoomPictureUITests.m; sourceTree = "<group>"; };
 		D7E8FC991C104CB3005E908F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7E8FCA51C104CE5005E908F /* XTZoomPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTZoomPicture.h; sourceTree = "<group>"; };
-		D7E8FCA61C104CE5005E908F /* XTZoomPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTZoomPicture.m; sourceTree = "<group>"; };
+		D7E8FD7E1C159D34005E908F /* XTZoomPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTZoomPicture.h; sourceTree = "<group>"; };
+		D7E8FD7F1C159D34005E908F /* XTZoomPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTZoomPicture.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,7 @@
 				D7E8FC761C104CB3005E908F /* AppDelegate.m */,
 				D7E8FC781C104CB3005E908F /* ViewController.h */,
 				D7E8FC791C104CB3005E908F /* ViewController.m */,
-				D7E8FCA51C104CE5005E908F /* XTZoomPicture.h */,
-				D7E8FCA61C104CE5005E908F /* XTZoomPicture.m */,
+				D7E8FD7D1C159D34005E908F /* XTZoomPicture */,
 				D7E8FC7B1C104CB3005E908F /* Main.storyboard */,
 				D7E8FC7E1C104CB3005E908F /* Assets.xcassets */,
 				D7E8FC801C104CB3005E908F /* LaunchScreen.storyboard */,
@@ -143,6 +142,15 @@
 				D7E8FC991C104CB3005E908F /* Info.plist */,
 			);
 			path = XTZoomPictureUITests;
+			sourceTree = "<group>";
+		};
+		D7E8FD7D1C159D34005E908F /* XTZoomPicture */ = {
+			isa = PBXGroup;
+			children = (
+				D7E8FD7E1C159D34005E908F /* XTZoomPicture.h */,
+				D7E8FD7F1C159D34005E908F /* XTZoomPicture.m */,
+			);
+			path = XTZoomPicture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +286,7 @@
 				D7E8FC7A1C104CB3005E908F /* ViewController.m in Sources */,
 				D7E8FC771C104CB3005E908F /* AppDelegate.m in Sources */,
 				D7E8FC741C104CB3005E908F /* main.m in Sources */,
-				D7E8FCA71C104CE5005E908F /* XTZoomPicture.m in Sources */,
+				D7E8FD801C159D34005E908F /* XTZoomPicture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
