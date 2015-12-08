@@ -6,6 +6,8 @@
 //  Copyright © 2015年 teason. All rights reserved.
 //
 
+#define SIDE_ZOOMTORECT     80.0
+
 #import "XTZoomPicture.h"
 
 @interface XTZoomPicture ()
@@ -136,7 +138,7 @@
     else
     {
         CGPoint point = [tapGesture locationInView:self] ;
-        [self zoomToRect:CGRectMake(point.x - 40, point.y - 40, 80, 80) animated:YES] ;
+        [self zoomToRect:CGRectMake(point.x - SIDE_ZOOMTORECT / 2, point.y - SIDE_ZOOMTORECT / 2, SIDE_ZOOMTORECT, SIDE_ZOOMTORECT) animated:YES] ;
     }
 }
 
